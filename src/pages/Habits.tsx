@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
+import React, { useState, useEffect } from "react"
 import "./App.css";
 import api from "../services/api";
+import Create from "../components/habits/Create"
 
 function App() {
   const [habitsData, setHabitsData] = useState<any[]>([]);
@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+	<Create />
         {habitsData.length !== 0 ? (
           habitsData.map((habit) => (<p key={habit.id}>{habit.name}</p>))
         ) : (
