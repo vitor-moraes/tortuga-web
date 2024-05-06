@@ -8,7 +8,7 @@ import Habits from "./pages/Habits";
 const AppRoutes = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="*" element={<Habits />} />
+      <Route path="/" element={<Habits />} />
     </Routes>
   </BrowserRouter>
 );
