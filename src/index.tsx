@@ -1,15 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import AppRoutes from "./routes";
 import reportWebVitals from "./reportWebVitals";
+import Footer from "./pages/Footer";
+import Header from "./pages/Header";
+import Body from "./pages/Body";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <AppRoutes />
+    <React.Fragment>
+      <Header />
+      <Body />
+      <Footer />
+    </React.Fragment>
   </React.StrictMode>
 );
 
